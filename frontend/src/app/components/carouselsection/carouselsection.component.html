@@ -1,0 +1,26 @@
+<section>
+  <div class="carousel">
+    <div class="slides" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+      <div class="slide" style="background-image: url('assets/images/carousel1.jpg');  background-position: center;">
+        <div class="slidetextcontainer">
+          <h1>Empowering Minds Through Technology</h1>
+          <p>Join us on a journey to master the digital world. Learn from experts. Build your future</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('assets/images/carousel2.jpg');  background-position: center;">
+        <div class="slidetextcontainer">
+          <h1>Your Career Starts Here</h1>
+          <p>Get certified, gain confidence, and step into the IT industry with real-world skills.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('assets/images/carousel3.jpg');  background-position: center;">
+        <div class="slidetextcontainer">
+          <h1>Online & Offline Classes Available</h1>
+          <p>Learn at your convenience — from anywhere, anytime.</p>
+        </div>
+      </div>
+    </div>
+    <button class="prev" (click)="prevSlide()">❮</button>
+    <button class="next" (click)="nextSlide()">❯</button>
+  </div>
+</section>
