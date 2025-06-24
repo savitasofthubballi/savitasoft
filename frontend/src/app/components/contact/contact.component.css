@@ -1,0 +1,16 @@
+header{
+    margin: 0;
+    padding: 15px 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+header p{
+    font-weight: bold;
+}
+
+header p span{
+    margin-right: 20px;
+}
