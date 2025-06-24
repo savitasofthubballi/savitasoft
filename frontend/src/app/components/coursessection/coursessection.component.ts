@@ -6,30 +6,39 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
   templateUrl: './coursessection.component.html',
   styleUrl: './coursessection.component.css'
 })
-export class CoursessectionComponent implements AfterViewInit{
+export class CoursessectionComponent implements OnInit{
 
-  @ViewChild('coursecontainer') coursecontainer!: ElementRef<HTMLDivElement>;
+  @ViewChild('coursecontainer', { static: true }) courseContainer!: ElementRef;
+  scrollInterval: any;
 
-  timerInterval : number = 10;
-
-  scroll : any;
-
-  ngAfterViewInit(): void {
-    this.coursecontainer.nativeElement.scrollLeft = 100;
-    this.scrollCard();
+  ngOnInit(): void {
+    this.startAutoScroll();
   }
 
-  scrollCard(){
-    this.scroll = setInterval(() => {
-      this.coursecontainer.nativeElement.scrollBy({ left: 1, behavior: 'smooth' });
-    }, this.timerInterval);
+  startAutoScroll(): void {
+    this.scrollInterval = setInterval(() => {
+      const container = this.courseContainer.nativeElement;
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+      if (container.scrollLeft >= maxScrollLeft) {
+        // Reset to beginning
+        container.scrollLeft = 0;
+        console.log("Re-setting to beginning");
+        this.pauseAutoScroll();
+      } else {
+        // Scroll forward
+        container.scrollLeft += 1;
+        console.log("Next card");
+      }
+      console.log("scrollLeft : "+container.scrollLeft+" MaxScrollLeft : "+maxScrollLeft);
+    }, 20); // Adjust speed here
   }
 
-  courseCardMouseEnter(){
-    clearInterval(this.scroll);
+  pauseAutoScroll(): void {
+    clearInterval(this.scrollInterval);
   }
 
-  courseCardMouseLeave(){
-    this.scrollCard();
+  resumeAutoScroll(): void {
+    this.startAutoScroll();
   }
 }

@@ -2,41 +2,40 @@
     <h2>Trending Courses</h2>
     <div class="course-container" #coursecontainer>
         <div class="course-card">
-            <img src="assets/images/ClassroomTraining.jpg" alt="">
-            <h3>Classroom Training</h3>
-            <p>Learn in a structured environment with expert trainers, real-time practice, and personalized support.</p>
+            <img src="assets/images/javafullstack.jpeg" alt="">
+            <h3>Java Full Stack Development</h3>
+            <p>Master Java programming with Spring Boot, REST APIs, Hibernate, and a responsive frontend using Angular or React. Includes hands-on MySQL and deployment techniques.</p>
         </div>
         <div class="course-card">
-            <img src="assets/images/CorporateTraining.jpg" alt="">
-            <h3>Corporate Training</h3>
-            <p>Customized training programs designed to upskill your workforce with industry-relevant technologies and tools.</p>
+            <img src="assets/images/mernfullstack.jpeg" alt="">
+            <h3>MERN Full Stack Development</h3>
+            <p>Learn MongoDB, Express.js, React, and Node.js to build modern, scalable web applications with a NoSQL backend and dynamic frontend.</p>
         </div>
-        <div class="course-card" (mouseenter)="courseCardMouseEnter()" (mouseleave)="courseCardMouseLeave()">
-            <img src="assets/images/OnlineTraining.jpg" alt="">
-            <h3>Online Training</h3>
-            <p>Flexible, live online sessions with hands-on projects — learn anytime, from anywhere.</p>
+        <div class="course-card" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()">
+            <img src="assets/images/meanfullstack.jpeg" alt="">
+            <h3>MEAN Full Stack Development</h3>
+            <p>Develop full stack applications using MongoDB, Express.js, Angular, and Node.js. Ideal for creating real-time, single-page web apps.</p>
         </div>
-        <div class="course-card" (mouseenter)="courseCardMouseEnter()" (mouseleave)="courseCardMouseLeave()">
-            <img src="assets/images/PlacementTraining.jpg" alt="">
-            <h3>Placement-Oriented Training</h3>
-            <p>Job-ready training with resume building, mock interviews, and skill-based coaching to boost your career launch.</p>
+        <div class="course-card" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()">
+            <img src="assets/images/pythonfullstack.jpeg" alt="">
+            <h3>Python Full Stack Development</h3>
+            <p>Gain expertise in Python with Django or Flask for backend, integrated with React or Angular for frontend, and PostgreSQL/MySQL databases.</p>
         </div>
-        <div class="course-card" (mouseenter)="courseCardMouseEnter()" (mouseleave)="courseCardMouseLeave()">
-            <img src="assets/images/OnlineTraining.jpg" alt="">
-            <h3>Online Training</h3>
-            <p>Flexible, live online sessions with hands-on projects — learn anytime, from anywhere.</p>
+        <div class="course-card" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()">
+            <img src="assets/images/clanguage.jpeg" alt="">
+            <h3>C Language Programming</h3>
+            <p>Build strong programming fundamentals with C. Perfect for beginners aiming to understand memory management, pointers, and procedural logic.</p>
         </div>
-        <div class="course-card" (mouseenter)="courseCardMouseEnter()" (mouseleave)="courseCardMouseLeave()">
-            <img src="assets/images/PlacementTraining.jpg" alt="">
-            <h3>Placement-Oriented Training</h3>
-            <p>Job-ready training with resume building, mock interviews, and skill-based coaching to boost your career launch.</p>
+        <div class="course-card" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()">
+            <img src="assets/images/cpplanguage.jpeg" alt="">
+            <h3>C++ Language Programming</h3>
+            <p>Dive into object-oriented programming using C++. Learn about classes, inheritance, STL, and build projects to strengthen logic and problem-solving skills.</p>
         </div>
-        <div class="course-card" (mouseenter)="courseCardMouseEnter()" (mouseleave)="courseCardMouseLeave()">
-            <img src="assets/images/PlacementTraining.jpg" alt="">
-            <h3>Placement-Oriented Training</h3>
-            <p>Job-ready training with resume building, mock interviews, and skill-based coaching to boost your career launch.</p>
-        </div>
-        
+        <div class="course-card" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()">
+            <img src="assets/images/datastructures.jpeg" alt="">
+            <h3>Data Structures and Algorithms</h3>
+            <p>Enhance your coding skills by learning arrays, linked lists, trees, graphs, sorting, and searching algorithms. Ideal for placements and competitive programming.</p>        
+        </div>  
     </div>
    
 </section>

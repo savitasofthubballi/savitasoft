@@ -1,0 +1,36 @@
+footer{
+    background-color: #074b69;
+    color: white;
+    margin : 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start
+}
+
+.leftsection ul{
+    padding-left: 30px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.leftsection ul li{
+    margin-bottom: 15px;
+}
+
+.leftsection ul li a{
+    font-size: 1rem;
+    font-weight: 600px;
+    color: white;
+    text-decoration: none;
+}
+
+.centersection p{
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.rightsection div{
+    padding-left: 30px;
+    margin-top: 10px;
+}
