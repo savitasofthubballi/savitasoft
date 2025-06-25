@@ -5,7 +5,8 @@ footer{
     padding: 30px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .leftsection ul{
