@@ -1,8 +1,11 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-coursessection',
-  imports: [],
+  imports: [
+    RouterModule
+  ],
   templateUrl: './coursessection.component.html',
   styleUrl: './coursessection.component.css'
 })

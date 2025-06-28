@@ -10,6 +10,7 @@ section{
   margin: auto;
   background-color: rgb(163, 162, 162,0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .slides {
@@ -54,7 +55,7 @@ button.next {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 50%;
@@ -66,6 +67,11 @@ button.prev {
 
 button.next {
   right: 10px;
+}
+
+.slidetextcontainer h1{
+  font-size: 2em;
+  font-weight: bold;
 }
 
 

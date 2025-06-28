@@ -10,8 +10,7 @@ import { ContactComponent } from '../contact/contact.component';
   imports: [
     CarouselsectionComponent,
     ServicesectionComponent,
-    CoursessectionComponent,
-    FooterComponent
+    CoursessectionComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

@@ -6,6 +6,18 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.anchorbutton{
+    margin-top: 30px;
+    padding: 5rem;
+    width: 6rem;
+    padding: 10px;
+    background-color: #0c719c;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
