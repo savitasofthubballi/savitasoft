@@ -53,3 +53,6 @@ package-lock.json
 # Optional: Docker and Render
 *.db
 docker-compose.override.yml
+
+
+README.txt

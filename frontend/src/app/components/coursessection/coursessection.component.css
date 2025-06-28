@@ -28,8 +28,11 @@ section h2 {
     display: none;
 }
 
-/* Course Card Styling */
 .course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     flex: 0 0 auto;
     min-width: 220px;
     max-width: 280px;
@@ -39,6 +42,32 @@ section h2 {
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+}
+
+.course-card p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Pushes the button container to bottom */
+.coursebuttonp {
+    margin-top: auto;
+}
+
+/* Style the button anchor */
+.anchorbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.anchorbutton:hover {
+    background-color: #0056b3;
 }
 
 .course-card:hover {
@@ -58,5 +87,11 @@ section h2 {
 }
 
 .course-card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.course-card img {
+    align-self: center;
+}
+
+

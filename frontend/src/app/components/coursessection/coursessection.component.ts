@@ -1,8 +1,11 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-coursessection',
-  imports: [],
+  imports: [
+    RouterModule
+  ],
   templateUrl: './coursessection.component.html',
   styleUrl: './coursessection.component.css'
 })
@@ -23,14 +26,11 @@ export class CoursessectionComponent implements OnInit{
       if (container.scrollLeft >= maxScrollLeft) {
         // Reset to beginning
         container.scrollLeft = 0;
-        console.log("Re-setting to beginning");
         this.pauseAutoScroll();
       } else {
         // Scroll forward
         container.scrollLeft += 1;
-        console.log("Next card");
       }
-      console.log("scrollLeft : "+container.scrollLeft+" MaxScrollLeft : "+maxScrollLeft);
     }, 20); // Adjust speed here
   }
 
